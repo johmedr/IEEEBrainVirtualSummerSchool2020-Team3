@@ -14,7 +14,7 @@ function startbybreader()
     clear global dataByb
     global maxDataBybSize
     maxDataBybSize = 50000;
-    tim = timer('ExecutionMode','fixedRate','Period',1e-2,'TimerFcn', {@readslice, 512});
+    tim = timer('ExecutionMode','fixedRate','Period',1e-1,'TimerFcn', {@readslice, 1002});
     start(tim)
 end
 
@@ -35,8 +35,11 @@ function readslice(obj, evt, slice_size)
            outslice(i) = uint16(uint16(bitand(high,127)).*128);%.*128 will shift it by 7 places
            outslice(i) = real(outslice(i) + uint16(low));
         end
-        
-        dataByb = [dataByb outslice];
+        if isempty(dataByb)
+            dataByb = [outslice];
+        else
+            dataByb = [dataByb outslice];
+        end
         nData = size(dataByb, 2);
         if  nData > maxDataBybSize
             dataByb = dataByb(nData - maxDataBybSize + 1:nData);
