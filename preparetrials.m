@@ -1,6 +1,7 @@
-function [tim] = preparetrials(trials, trialDur, intertrialDur)
-%UNTITLED6 Summary of this function goes here
-%   Detailed explanation goes here
+function [tim] = preparetrials(trialsSeq, trialDur, intertrialDur)
+% preparetrials Prepare a trials sequence (trialsSeq) with certain duration
+% (trialDur) and intertrial duration (intertrialDur). Returns a timer
+% object that can be started and stopped with start(.) and stop(.)
     global currentTrials
     global trialDuration
     global intertrialDuration
@@ -9,7 +10,7 @@ function [tim] = preparetrials(trials, trialDur, intertrialDur)
     trialDuration = trialDur; 
     intertrialDuration = intertrialDur; 
     trialNumber = 1;
-    currentTrials = trials;
+    currentTrials = trialsSeq;
     trialTime = 0
     period = 0.5
     tim = timer('ExecutionMode','fixedRate','Period', 0.5,'TimerFcn',{@performtrial, period});

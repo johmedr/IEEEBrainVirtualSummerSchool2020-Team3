@@ -6,9 +6,9 @@ function [im] = flickeringcheckboards(nRows, nCols, freqArray)
 %   (e.g. for a 3x3 grid, up-right checkerboard is n°3 and down-left
 %   cherckerboard is n°7). 
 %   User events, such as moving the mouse, will probably impact the figure's refresh rate 
-    defaultRefreshFreq = 60;
+    defaultRefreshFreq = 50;
 
-    basePeriods = 0.5./(freqArray);
+    basePeriods = 1./(freqArray);
     global indivCounters ;
     global nRowsCheckerboard;
     global nColsCheckerboard; 
@@ -22,6 +22,7 @@ function [im] = flickeringcheckboards(nRows, nCols, freqArray)
     indivCounters = basePeriods;
     width = 50;
     cb = checkerboard(width) > 0.5;
+    
     for row = 1:nRows
         for col = 1:nCols
             idx = (row - 1) * nCols + col;

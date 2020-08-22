@@ -5,13 +5,22 @@ delete(timerfindall);
 startbybreader();
 
 % Start the interface 
-flickeringcheckboards(1, 2, [11 17]);
+figure('Units','normalized','Position',[0 0 1 1])
+flickeringFreqs  = [11, 17] %Hz
+flickeringcheckboards(1, 2, flickeringFreqs);
 
-% Create some trials
-trialSequence = randi(2,1,40) 
+% We have 20 trials of 7 sec per class, with 2 sec intertrial interval
+nTrials = 20
 trialDuration = 7 %sec
 intertrialDuration = 2 %sec
+
+% Randomly order the trials
+trialSequence = repelem([1 2], nTrials)
+trialSequence = trialSequence(randperm(2 * nTrials))
+
+% Prepare and start the trials
 trials = preparetrials(trialSequence, trialDuration, intertrialDuration); 
 start(trials); 
 
-pause(2);
+% TODO: Synchronise trials with data
+% TODO: Simple functions to get trials data + event
