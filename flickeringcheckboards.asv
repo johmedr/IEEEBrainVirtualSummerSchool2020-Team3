@@ -3,14 +3,13 @@ function [tim] = flickeringcheckboards(nRows, nCols, freqArray)
 %   nRows and nCols control the number of flickerboards 
 %   freqArray is an nRows * nCols array containing individual frequencies,
 %   with i-th element selecting the i-th checkerboard in row-wise ordering
-%   (e.g. for a 3x3 grid, up-right checkerboard is n°3 and down-left
-%   cherckerboard is n°7). 
-%   User events, such as moving the mouse, will probably impact the figure's refresh rate 
+%   (i.e. for a 3x3 grid, up-right checkerboard is n°3 and down-left corner is 
     defaultRefreshFreq = 60
 
     basePeriods = 0.5./(freqArray)
     global indivCounters 
     indivCounters = basePeriods
+    global lastTimes
     width = 50
     cb = checkerboard(width) > 0.5;
     clear im
@@ -34,16 +33,18 @@ end
 
 function flickerCheckerboards(obj, evt, im, basePeriods)
     global indivCounters
+    global lastTimes
     currTime = toc; 
     
     for i = 1:size(im, 2)
-        drawnow limitrate;
         if indivCounters(i) > currTime
             indivCounters(i) = indivCounters(i) - currTime;
         else 
             indivCounters(i) = basePeriods(i);
             im(i).CData = ~im(i).CData;
+            lastTimes(i, :) = [lastTimes(i); cputime]; 
         end
+            %drawnow limitrate;
     end
     %drawnow;
     
