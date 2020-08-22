@@ -16,7 +16,12 @@ from the board.
 
 
 ## 2- Display the BCI interface
-The function `makeflickeringrectangle(position, frequency, curvature)` can be used to display 
-flickering shapes on the current figure. 
-The function `flickering1d(leftFreq, midFreq, rightFreq)` can be used to display 3 flickering 
-shapes with 3 different flickering frequencies. 
+The function `makeflickerincherckerboard(nRows, nCols, freq)` can be used to display 
+flickering checkerboards on the current figure. Displays a grid of $nRows \times nCols$ 
+checkerboards. Individual frequencies are given in the 1D array `freq`, using a row-wise ordering 
+(e.g. for a 3x3 grid, upper-right is n°3 and lower-left is n°7). 
+
+## 3- Start all at once 
+``` Matlab 
+>> startbci
+``` 
