@@ -12,10 +12,10 @@ function [im] = flickeringcheckboards(nRows, nCols, freqArray)
     global indivCounters ;
     global nRowsCheckerboard;
     global nColsCheckerboard; 
+    global imCheckerboards;
     clear global selectedRect
     clear im
     clf
-    
     nRowsCheckerboard = nRows;
     nColsCheckerboard = nCols; 
 
@@ -33,9 +33,11 @@ function [im] = flickeringcheckboards(nRows, nCols, freqArray)
             end
         end
     end
+    
+    imCheckerboards = im;
     tim = timer('ExecutionMode','fixedRate','Period',real(1/defaultRefreshFreq),'TimerFcn',{@flickerCheckerboards, im, basePeriods});
-    start(tim);
     tic; 
+    start(tim);
 end
 
 function flickerCheckerboards(obj, evt, im, basePeriods)
