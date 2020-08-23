@@ -1,7 +1,7 @@
 function [byb_connected] = connectbyb()
 %connectbyb Connects to Backyard brain Kit. Returns 1 when connected. 
 %   Serial port is then available in global serialByb.
-    port = serialportlist;
+    port = seriallist
     baudrate = 230400;
     byb_connected = 0;
     n_trials = 100;
