@@ -2,7 +2,7 @@
 delete(timerfindall);
 
 % Start the BYB driver
-startbybreader();
+% startbybreader();
 
 % Start the interface 
 figure('Units','normalized','Position',[0 0 1 1])
@@ -14,8 +14,8 @@ nTrials = 20
 trialDuration = 7 %sec
 intertrialDuration = 2 %sec
 
-% Randomly order the trials
 trialSequence = repelem([1 2], nTrials)
+% Randomly order the trials
 trialSequence = trialSequence(randperm(2 * nTrials))
 
 % Prepare and start the trials

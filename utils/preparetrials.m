@@ -7,11 +7,16 @@ function [tim] = preparetrials(trialsSeq, trialDur, intertrialDur)
     global intertrialDuration
     global trialNumber
     global trialTime
-    trialDuration = trialDur; 
+    global selectedIdx
+    
+    trialDuration = trialDur;   
     intertrialDuration = intertrialDur; 
     trialNumber = 1;
     currentTrials = trialsSeq;
-    trialTime = 0
+    trialTime = 0;
+    
+    selectedIdx = 0;
+    
     period = 0.5
     tim = timer('ExecutionMode','fixedRate','Period', 0.5,'TimerFcn',{@performtrial, period});
 end
@@ -24,6 +29,7 @@ function performtrial(obj, evt, period)
     global trialDuration 
     global intertrialDuration 
     global selectedIdx
+    
     trialTime = trialTime + period; 
     if trialTime <= trialDuration 
         if selectedIdx ~= currentTrials(trialNumber)
@@ -37,7 +43,6 @@ function performtrial(obj, evt, period)
         end
     else
         trialTime = 0;
-        
         
         if trialNumber < size(currentTrials, 2)
             trialNumber = trialNumber + 1;
