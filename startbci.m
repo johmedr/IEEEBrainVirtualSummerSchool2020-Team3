@@ -2,7 +2,15 @@
 delete(timerfindall);
 
 % Start the BYB driver
-% startbybreader();
+maximumRecordingData = 100000; % data points - 10 sec
+sliceSize = 1000; %Transfer data by chunks of 1000 points 
+startbybreader(maximumRecordingData, sliceSize);
+% Then, data can be accessed in the global variable dataByb
+global dataByb; % array of length maximumRecordingData
+% Events for the data chunk are stored in the global variable eventByb
+% Event i corresponds to the data chunk dataByb(i*sliceSize:(i+1)*sliceSize)
+global eventByb; 
+
 
 % Start the interface 
 figure('Units','normalized','Position',[0 0 1 1])
@@ -21,6 +29,3 @@ trialSequence = trialSequence(randperm(2 * nTrials))
 % Prepare and start the trials
 trials = preparetrials(trialSequence, trialDuration, intertrialDuration); 
 start(trials); 
-
-% TODO: Synchronise trials with data
-% TODO: Simple functions to get trials data + event

@@ -1,4 +1,4 @@
-function startbybreader() 
+function startbybreader(maximumRecordingData, sliceSize) 
 % startdatareader: starts a task which is called every 'period'. The task
 % will move a slice of a certain size into a global array, global dataByb. 
 % Timer minimal period the 1e-3, transfering slices of data allows to use a 
@@ -12,24 +12,30 @@ function startbybreader()
     end
     
     clear global dataByb
+    clear global eventByb
     global maxDataBybSize
-    maxDataBybSize = 50000;
-    tim = timer('ExecutionMode','fixedRate','Period',1e-1,'TimerFcn', {@readslice, 1002});
+    global maxEventBybSize
+    maxDataBybSize = maximumRecordingData;
+    maxEventBybSize = int32(maxDataBybSize/sliceSize); 
+    tim = timer('ExecutionMode','fixedRate','Period',1e-1,'TimerFcn', {@readslice, sliceSize});
     start(tim)
 end
 
-function readslice(obj, evt, slice_size) 
+function readslice(obj, evt, sliceSize) 
     global serialByb 
     global dataByb
     global maxDataBybSize
-    
-    if serialByb.NumBytesAvailable > slice_size
-        slice = read(serialByb, slice_size, 'uint8');
+    global eventByb 
+    global selectedIdx
+    global maxEventBybSize
+       
+    if serialByb.NumBytesAvailable > sliceSize
+        slice = read(serialByb, sliceSize, 'uint8');
         if slice(1) < slice(2)
-            slice = slice(2:slice_size);
+            slice = slice(2:sliceSize);
         end 
 
-        for i = 1:(slice_size/2 - 1)
+        for i = 1:(sliceSize/2 - 1)
            high = slice(2*i) ;
            low = slice(2*i + 1);
            outslice(i) = uint16(uint16(bitand(high,127)).*128);%.*128 will shift it by 7 places
@@ -37,12 +43,16 @@ function readslice(obj, evt, slice_size)
         end
         if isempty(dataByb)
             dataByb = [outslice];
+            eventByb = [selectedIdx];
         else
             dataByb = [dataByb outslice];
+            eventByb = [eventByb selectedIdx];
         end
         nData = size(dataByb, 2);
+        nEvts = size(eventByb, 2); 
         if  nData > maxDataBybSize
             dataByb = dataByb(nData - maxDataBybSize + 1:nData);
+            eventByb = eventByb(nEvts - maxEventBybSize + 1:nEvts);
         end
     end
 end
