@@ -30,7 +30,12 @@ function readslice(obj, evt, sliceSize)
     global maxEventBybSize
        
     if serialByb.NumBytesAvailable > sliceSize
-        slice = read(serialByb, sliceSize, 'uint8');
+        
+        if verLessThan('matlab', '9.7')
+            slice = fread(serialByb, sliceSize, 'uint8');
+        else
+            slice = read(serialByb, sliceSize, 'uint8');
+        end
         if slice(1) < slice(2)
             slice = slice(2:sliceSize);
         end 
