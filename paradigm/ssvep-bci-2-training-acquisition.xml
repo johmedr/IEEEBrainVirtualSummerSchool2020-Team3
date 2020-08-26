@@ -3,6 +3,72 @@
 	<CreatorVersion>1.2.2</CreatorVersion>
 	<Boxes>
 		<Box>
+			<Identifier>(0x00000db9, 0x00003797)</Identifier>
+			<Name>GDF file writer</Name>
+			<AlgorithmClassIdentifier>(0x1e7b2155, 0x107289ce)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x403488e7, 0x565d70b6)</TypeIdentifier>
+					<Name>Experiment information</Name>
+				</Input>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Signal</Name>
+				</Input>
+				<Input>
+					<TypeIdentifier>(0x6f752dd0, 0x082a321e)</TypeIdentifier>
+					<Name>Stimulation</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x330306dd, 0x74a95f98)</TypeIdentifier>
+					<Name>Filename</Name>
+					<DefaultValue>record-[$core{date}-$core{time}].gdf</DefaultValue>
+					<Value>C:\Users\HP\Desktop\PhD\IEEEbrain_SummerSchool\BYB\Data</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>368.000000</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x1fa963f5, 0x1a638cd4)</Identifier>
+					<Value>23</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>800.000000</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xd41e3037, 0xcc12644a)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xad100179, 0xa3c984ab)</Identifier>
+					<Value>89</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
+					<Value>(0x00000000, 0x014d61b6)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc73e83ec, 0xf855c5bc)</Identifier>
+					<Value>false</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
 			<Identifier>(0x00004162, 0x0000548c)</Identifier>
 			<Name>Acquisition client</Name>
 			<AlgorithmClassIdentifier>(0x35d225cb, 0x3e6e3a5f)</AlgorithmClassIdentifier>
@@ -47,7 +113,7 @@
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>272.000000</Value>
+					<Value>256.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x1fa963f5, 0x1a638cd4)</Identifier>
@@ -55,7 +121,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>880.000000</Value>
+					<Value>944.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
@@ -67,7 +133,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
-					<Value>(0x00000000, 0x002df0d0)</Value>
+					<Value>(0x00000000, 0x0135653d)</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc73e83ec, 0xf855c5bc)</Identifier>
@@ -115,21 +181,21 @@
 					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
 					<Name>Goal sequence</Name>
 					<DefaultValue>0 2 3 1 2 1 0 3 1 2 3 0 2 0 3 1 0 3 1 2 3 0 1 2 1 3 2 0 3 2 0 1 </DefaultValue>
-					<Value>0   2   0   1   0   1   2   1   2   0    1     2    0    2    1</Value>
+					<Value>1     2     1     2     1     1     2     1      1     2     1     1     2     2     1     2     2      1     2     1     2     1     2     1     2     2     1     2     1     2     2     2     1     2  1     1     2     1     2    1</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
 					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
 					<Name>Stimulation duration</Name>
 					<DefaultValue>7</DefaultValue>
-					<Value>7</Value>
+					<Value>4</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
 					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
 					<Name>Break duration</Name>
 					<DefaultValue>4</DefaultValue>
-					<Value>3</Value>
+					<Value>2</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -161,7 +227,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>15.000000</Value>
+					<Value>64.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x1fa963f5, 0x1a638cd4)</Identifier>
@@ -185,7 +251,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
-					<Value>(0x00000000, 0x0cc3f3de)</Value>
+					<Value>(0x00000000, 0x01d616f6)</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc67a01dc, 0x28ce06c1)</Identifier>
@@ -210,7 +276,7 @@
 			</Attributes>
 		</Box>
 		<Box>
-			<Identifier>(0x15eff133, 0x1354c796)</Identifier>
+			<Identifier>(0x15eff133, 0x1354c798)</Identifier>
 			<Name>Scenario Control</Name>
 			<AlgorithmClassIdentifier>(0x40714327, 0x458877d2)</AlgorithmClassIdentifier>
 			<Outputs>
@@ -267,7 +333,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>-176</Value>
+					<Value>-48.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x1fa963f5, 0x1a638cd4)</Identifier>
@@ -275,7 +341,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>896</Value>
+					<Value>592.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
@@ -291,7 +357,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
-					<Value>(0x00000000, 0x0299a633)</Value>
+					<Value>(0x00000000, 0x03422467)</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
@@ -467,7 +533,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
-					<Value>(0x00000000, 0x03af74d2)</Value>
+					<Value>(0x00000000, 0x0756c93e)</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
@@ -480,67 +546,6 @@
 				<Attribute>
 					<Identifier>(0xfba64161, 0x65304e21)</Identifier>
 					<Value></Value>
-				</Attribute>
-			</Attributes>
-		</Box>
-		<Box>
-			<Identifier>(0x2d1eee72, 0x5d16ec35)</Identifier>
-			<Name>Player Controller</Name>
-			<AlgorithmClassIdentifier>(0x5f426dce, 0x08456e13)</AlgorithmClassIdentifier>
-			<Inputs>
-				<Input>
-					<TypeIdentifier>(0x6f752dd0, 0x082a321e)</TypeIdentifier>
-					<Name>Stimulations</Name>
-				</Input>
-			</Inputs>
-			<Settings>
-				<Setting>
-					<TypeIdentifier>(0x2c132d6e, 0x44ab0d97)</TypeIdentifier>
-					<Name>Stimulation name</Name>
-					<DefaultValue>OVTK_StimulationId_Label_00</DefaultValue>
-					<Value>OVTK_StimulationId_ExperimentStop</Value>
-					<Modifiability>false</Modifiability>
-				</Setting>
-				<Setting>
-					<TypeIdentifier>(0xcc14d8d6, 0xf27ecb73)</TypeIdentifier>
-					<Name>Action to perform</Name>
-					<DefaultValue>Pause</DefaultValue>
-					<Value>Stop</Value>
-					<Modifiability>false</Modifiability>
-				</Setting>
-			</Settings>
-			<Attributes>
-				<Attribute>
-					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>-96</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x1fa963f5, 0x1a638cd4)</Identifier>
-					<Value>23</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>896</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
-					<Value>(0x568d148e, 0x650792b3)</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xad100179, 0xa3c984ab)</Identifier>
-					<Value>105</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
-					<Value>(0x00000000, 0x00903ea7)</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
-					<Value>2</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
-					<Value>1</Value>
 				</Attribute>
 			</Attributes>
 		</Box>
@@ -654,7 +659,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
-					<Value>(0x00000000, 0x02ae18af)</Value>
+					<Value>(0x00000000, 0x0a3af31c)</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
@@ -711,7 +716,7 @@
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>416</Value>
+					<Value>368.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x1fa963f5, 0x1a638cd4)</Identifier>
@@ -719,7 +724,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>992</Value>
+					<Value>928.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
@@ -735,7 +740,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
-					<Value>(0x00000000, 0x00ff433a)</Value>
+					<Value>(0x00000000, 0x0162f160)</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
@@ -784,7 +789,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>-128</Value>
+					<Value>16.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x1fa963f5, 0x1a638cd4)</Identifier>
@@ -792,7 +797,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>1184</Value>
+					<Value>1184.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
@@ -808,7 +813,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
-					<Value>(0x00000000, 0x00f66a54)</Value>
+					<Value>(0x00000000, 0x010d2804)</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
@@ -879,7 +884,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
-					<Value>(0x00000000, 0x009aed50)</Value>
+					<Value>(0x00000000, 0x013ee5e8)</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
@@ -914,7 +919,7 @@
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>272</Value>
+					<Value>256.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x1fa963f5, 0x1a638cd4)</Identifier>
@@ -922,7 +927,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>1072</Value>
+					<Value>800.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
@@ -934,7 +939,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
-					<Value>(0x00000000, 0x01b8fde5)</Value>
+					<Value>(0x00000000, 0x02d1e106)</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
@@ -979,7 +984,7 @@
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
-					<Value>-48</Value>
+					<Value>128.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x1fa963f5, 0x1a638cd4)</Identifier>
@@ -987,7 +992,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
-					<Value>1184</Value>
+					<Value>1184.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
@@ -1003,7 +1008,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
-					<Value>(0x00000000, 0x00a8f3ad)</Value>
+					<Value>(0x00000000, 0x00cd3177)</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
@@ -1066,7 +1071,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
-					<Value>(0x00000000, 0x00d0353a)</Value>
+					<Value>(0x00000000, 0x0117d6b8)</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
@@ -1085,6 +1090,122 @@
 	</Boxes>
 	<Links>
 		<Link>
+			<Identifier>(0x00001258, 0x00000d71)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x00004162, 0x0000548c)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x00000db9, 0x00003797)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1b32c44c, 0x1905e0e9)</Identifier>
+					<Value>274</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x358ae8b5, 0x0f8bacd1)</Identifier>
+					<Value>914</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x3f0a3b27, 0x570913d2)</Identifier>
+					<Value>352</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x6267b5c5, 0x676e3e42)</Identifier>
+					<Value>785</Value>
+				</Attribute>
+			</Attributes>
+		</Link>
+		<Link>
+			<Identifier>(0x000012af, 0x00000859)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x4ace51e8, 0x2aa6d781)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x00000db9, 0x00003797)</BoxIdentifier>
+				<BoxInputIndex>2</BoxInputIndex>
+			</Target>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1b32c44c, 0x1905e0e9)</Identifier>
+					<Value>279</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x358ae8b5, 0x0f8bacd1)</Identifier>
+					<Value>800</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x3f0a3b27, 0x570913d2)</Identifier>
+					<Value>352</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x6267b5c5, 0x676e3e42)</Identifier>
+					<Value>815</Value>
+				</Attribute>
+			</Attributes>
+		</Link>
+		<Link>
+			<Identifier>(0x00001fb2, 0x00007242)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x15eff133, 0x1354c798)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x08185827, 0x2b518b10)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1b32c44c, 0x1905e0e9)</Identifier>
+					<Value>-19</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x358ae8b5, 0x0f8bacd1)</Identifier>
+					<Value>584</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x3f0a3b27, 0x570913d2)</Identifier>
+					<Value>37</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x6267b5c5, 0x676e3e42)</Identifier>
+					<Value>592</Value>
+				</Attribute>
+			</Attributes>
+		</Link>
+		<Link>
+			<Identifier>(0x0000356a, 0x00002b65)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x00004162, 0x0000548c)</BoxIdentifier>
+				<BoxOutputIndex>1</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x00000db9, 0x00003797)</BoxIdentifier>
+				<BoxInputIndex>1</BoxInputIndex>
+			</Target>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1b32c44c, 0x1905e0e9)</Identifier>
+					<Value>274</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x358ae8b5, 0x0f8bacd1)</Identifier>
+					<Value>929</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x3f0a3b27, 0x570913d2)</Identifier>
+					<Value>352</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x6267b5c5, 0x676e3e42)</Identifier>
+					<Value>800</Value>
+				</Attribute>
+			</Attributes>
+		</Link>
+		<Link>
 			<Identifier>(0x000035f8, 0x000060ec)</Identifier>
 			<Source>
 				<BoxIdentifier>(0x00004162, 0x0000548c)</BoxIdentifier>
@@ -1097,19 +1218,19 @@
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x1b32c44c, 0x1905e0e9)</Identifier>
-					<Value>290</Value>
+					<Value>274</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x358ae8b5, 0x0f8bacd1)</Identifier>
-					<Value>850</Value>
+					<Value>914</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x3f0a3b27, 0x570913d2)</Identifier>
-					<Value>394</Value>
+					<Value>346</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x6267b5c5, 0x676e3e42)</Identifier>
-					<Value>969</Value>
+					<Value>905</Value>
 				</Attribute>
 			</Attributes>
 		</Link>
@@ -1126,19 +1247,19 @@
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x1b32c44c, 0x1905e0e9)</Identifier>
-					<Value>290</Value>
+					<Value>274</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x358ae8b5, 0x0f8bacd1)</Identifier>
-					<Value>865</Value>
+					<Value>929</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x3f0a3b27, 0x570913d2)</Identifier>
-					<Value>394</Value>
+					<Value>346</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x6267b5c5, 0x676e3e42)</Identifier>
-					<Value>984</Value>
+					<Value>920</Value>
 				</Attribute>
 			</Attributes>
 		</Link>
@@ -1155,7 +1276,7 @@
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x1b32c44c, 0x1905e0e9)</Identifier>
-					<Value>44</Value>
+					<Value>93</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x358ae8b5, 0x0f8bacd1)</Identifier>
@@ -1271,48 +1392,19 @@
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x1b32c44c, 0x1905e0e9)</Identifier>
-					<Value>295</Value>
+					<Value>279</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x358ae8b5, 0x0f8bacd1)</Identifier>
-					<Value>1072</Value>
+					<Value>800</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x3f0a3b27, 0x570913d2)</Identifier>
-					<Value>394</Value>
+					<Value>346</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x6267b5c5, 0x676e3e42)</Identifier>
-					<Value>999</Value>
-				</Attribute>
-			</Attributes>
-		</Link>
-		<Link>
-			<Identifier>(0x246477be, 0x2e5221a0)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x15eff133, 0x1354c796)</BoxIdentifier>
-				<BoxOutputIndex>1</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x2d1eee72, 0x5d16ec35)</BoxIdentifier>
-				<BoxInputIndex>0</BoxInputIndex>
-			</Target>
-			<Attributes>
-				<Attribute>
-					<Identifier>(0x1b32c44c, 0x1905e0e9)</Identifier>
-					<Value>-147</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x358ae8b5, 0x0f8bacd1)</Identifier>
-					<Value>903</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x3f0a3b27, 0x570913d2)</Identifier>
-					<Value>-112</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x6267b5c5, 0x676e3e42)</Identifier>
-					<Value>896</Value>
+					<Value>935</Value>
 				</Attribute>
 			</Attributes>
 		</Link>
@@ -1404,35 +1496,6 @@
 			</Attributes>
 		</Link>
 		<Link>
-			<Identifier>(0x3d2ef813, 0x3b0586cf)</Identifier>
-			<Source>
-				<BoxIdentifier>(0x15eff133, 0x1354c796)</BoxIdentifier>
-				<BoxOutputIndex>0</BoxOutputIndex>
-			</Source>
-			<Target>
-				<BoxIdentifier>(0x08185827, 0x2b518b10)</BoxIdentifier>
-				<BoxInputIndex>0</BoxInputIndex>
-			</Target>
-			<Attributes>
-				<Attribute>
-					<Identifier>(0x1b32c44c, 0x1905e0e9)</Identifier>
-					<Value>-147</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x358ae8b5, 0x0f8bacd1)</Identifier>
-					<Value>888</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x3f0a3b27, 0x570913d2)</Identifier>
-					<Value>-12</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x6267b5c5, 0x676e3e42)</Identifier>
-					<Value>592</Value>
-				</Attribute>
-			</Attributes>
-		</Link>
-		<Link>
 			<Identifier>(0x41a6e934, 0x015be6e1)</Identifier>
 			<Source>
 				<BoxIdentifier>(0x2eb18d3c, 0x7422b864)</BoxIdentifier>
@@ -1445,7 +1508,7 @@
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x1b32c44c, 0x1905e0e9)</Identifier>
-					<Value>-99</Value>
+					<Value>45</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x358ae8b5, 0x0f8bacd1)</Identifier>
@@ -1453,7 +1516,7 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x3f0a3b27, 0x570913d2)</Identifier>
-					<Value>-70</Value>
+					<Value>106</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x6267b5c5, 0x676e3e42)</Identifier>
@@ -1532,7 +1595,7 @@
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x1b32c44c, 0x1905e0e9)</Identifier>
-					<Value>44</Value>
+					<Value>93</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x358ae8b5, 0x0f8bacd1)</Identifier>
@@ -1540,11 +1603,11 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x3f0a3b27, 0x570913d2)</Identifier>
-					<Value>250</Value>
+					<Value>234</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x6267b5c5, 0x676e3e42)</Identifier>
-					<Value>1079</Value>
+					<Value>807</Value>
 				</Attribute>
 			</Attributes>
 		</Link>
@@ -1590,7 +1653,7 @@
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x1b32c44c, 0x1905e0e9)</Identifier>
-					<Value>44</Value>
+					<Value>93</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x358ae8b5, 0x0f8bacd1)</Identifier>
@@ -1598,11 +1661,11 @@
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x3f0a3b27, 0x570913d2)</Identifier>
-					<Value>250</Value>
+					<Value>234</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x6267b5c5, 0x676e3e42)</Identifier>
-					<Value>1064</Value>
+					<Value>792</Value>
 				</Attribute>
 			</Attributes>
 		</Link>
@@ -1677,7 +1740,7 @@
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x1b32c44c, 0x1905e0e9)</Identifier>
-					<Value>44</Value>
+					<Value>93</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x358ae8b5, 0x0f8bacd1)</Identifier>
@@ -1697,6 +1760,38 @@
 	<MessageLinks></MessageLinks>
 	<Comments>
 		<Comment>
+			<Identifier>(0x00002714, 0x000001c0)</Identifier>
+			<Text>&lt;big&gt;&lt;b&gt;GDF file writer &lt;/b&gt;&lt;/big&gt;
+Output file in GDF format with EEG signal and markers
+</Text>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x473d9a43, 0x97fc0a97)</Identifier>
+					<Value>1152.000000</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x7234b86b, 0x2b8651a5)</Identifier>
+					<Value>288.000000</Value>
+				</Attribute>
+			</Attributes>
+		</Comment>
+		<Comment>
+			<Identifier>(0x00005b20, 0x00006405)</Identifier>
+			<Text>&lt;big&gt;&lt;b&gt;Generic stream writer &lt;/b&gt;&lt;/big&gt;
+Output file in OV format with EEG signal and markers
+</Text>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x473d9a43, 0x97fc0a97)</Identifier>
+					<Value>1152.000000</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x7234b86b, 0x2b8651a5)</Identifier>
+					<Value>384.000000</Value>
+				</Attribute>
+			</Attributes>
+		</Comment>
+		<Comment>
 			<Identifier>(0x0716e820, 0x5cffd019)</Identifier>
 			<Text>&lt;big&gt;&lt;b&gt;External Stimulator&lt;/b&gt;&lt;/big&gt;
 
@@ -1715,48 +1810,11 @@ stimulator and stop the scenario.</Text>
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x473d9a43, 0x97fc0a97)</Identifier>
-					<Value>1168</Value>
+					<Value>960.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x7234b86b, 0x2b8651a5)</Identifier>
-					<Value>-304</Value>
-				</Attribute>
-			</Attributes>
-		</Comment>
-		<Comment>
-			<Identifier>(0x07a7852d, 0x7630c95f)</Identifier>
-			<Text>&lt;b&gt;Connection to the external application&lt;/b&gt;
-
-The external stimulator is controlled through VRPN
-to display the configured sequence of targets at
-desired moments.</Text>
-			<Attributes>
-				<Attribute>
-					<Identifier>(0x473d9a43, 0x97fc0a97)</Identifier>
-					<Value>592</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x7234b86b, 0x2b8651a5)</Identifier>
-					<Value>176</Value>
-				</Attribute>
-			</Attributes>
-		</Comment>
-		<Comment>
-			<Identifier>(0x0c19ff72, 0x2875ade7)</Identifier>
-			<Text>&lt;b&gt;Connection to the external application&lt;/b&gt;
-
-This box receives commands from the external 
-stimulator application through the VRPN
-communication protocol.
-</Text>
-			<Attributes>
-				<Attribute>
-					<Identifier>(0x473d9a43, 0x97fc0a97)</Identifier>
-					<Value>640</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x7234b86b, 0x2b8651a5)</Identifier>
-					<Value>-144</Value>
+					<Value>-32.000000</Value>
 				</Attribute>
 			</Attributes>
 		</Comment>
@@ -1764,78 +1822,38 @@ communication protocol.
 			<Identifier>(0x41145f11, 0x12f42fbe)</Identifier>
 			<Text>&lt;big&gt;&lt;b&gt;SSVEP Training Controller&lt;/b&gt;&lt;/big&gt;
 
-You can configure the SSVEP training through this box. This box also
-configures the next &lt;i&gt;Classifier Training&lt;/i&gt; scenario, so it is
-&lt;u&gt;imperative&lt;/u&gt; to &lt;span color=&quot;red&quot;&gt;run this scenario every time you
-change settings in the training protocol&lt;/span&gt;. For more detail,
-please read the SSVEP Scenario documentation.
+SSVEP scenario for the training phase,
+a marker points at the target  the user has to look at.
+A prescribe sequence of stimuli is shown to the user.
+Stimulation duration, break duration  and flickering delay can be changed.
 
-&lt;b&gt;Goal Sequence&lt;/b&gt; A sequence of space-separated numbers. Each number
-represents a flickering object to be marked as a target. The number 0
-represents the &lt;i&gt;No target&lt;/i&gt; as in staring to a blank space. Other
-numbers represent indexes of the previously defined frequencies.
-
-&lt;b&gt;Stimulation duration&lt;/b&gt; The duration (in seconds) of the sequence
-during which the targets are flickering.
-
-&lt;b&gt;Break duration&lt;/b&gt; Duration (in seconds) of a break, i.e.: the length
-of the period during which the objects on screen are not flickering.
-
-&lt;b&gt;Flickering delay&lt;/b&gt; The delay (in seconds) between the moment when the
-arrow marking the target to be looked at by the subject appears and the
-beginning of the flickering sequence.
-
-&lt;b&gt;Training Target size&lt;/b&gt; The size of a stimulating object on screen.
-The size is given as a proportion of the size of the window. Thus an
-object of size 0.5;0.5 would have dimensions of length equal to the half
-of the size of the shortest dimension of the window.
-
-&lt;small&gt;Example of a value for this setting : &lt;b&gt;0.5;0.5&lt;/b&gt;&lt;/small&gt;
-
-&lt;b&gt;Training Targets' positions&lt;/b&gt; Positions of the targets on screen.
-There are N+1 targets on screen, where N is the number of stimulated
-frequencies. The first targets corresponds to the target number 0 which is
-not flickering at all. The values are given as relative positions to the
-screen. 0.0;0.0 represents the middle, 1.0;1.0 the top-right corner and
--1.0;-1.0 the bottom-left corner.
-
-&lt;small&gt;Example of a value for this setting :
-&lt;b&gt;(0.0;0.0);(0.0;0.5);(-0.5;0.0);(0.5;0.0)&lt;/b&gt;&lt;/small&gt;
-
+For Target Position and Target Size check &quot;trainer&quot; file and 
+please make sure that it has the following path:
+C:\Users\User\Desktop\openvibe\share\openvibe\applications\ssvep-demo
 </Text>
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x473d9a43, 0x97fc0a97)</Identifier>
-					<Value>112</Value>
+					<Value>112.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x7234b86b, 0x2b8651a5)</Identifier>
-					<Value>128</Value>
+					<Value>128.000000</Value>
 				</Attribute>
 			</Attributes>
 		</Comment>
 		<Comment>
 			<Identifier>(0x5347b592, 0x23e65626)</Identifier>
-			<Text>&lt;big&gt;&lt;b&gt;Scenario description&lt;/b&gt;&lt;/big&gt;
-
-This scenario is used for acquisition of the training data necessary to
-train the SSVEP classifiers. In order to run correctly it has to be
-configured by the &lt;b&gt;SSVEP Training Controller&lt;/b&gt; box.
-
-For the detailed description and experimental protocol, please refer to
-the SSVEP Scenario documentation on the OpenViBE website.
-
-&lt;small&gt;&lt;i&gt;&lt;b&gt;note:&lt;/b&gt; the recorded files go to the
-folder where the scenario xml is located
-(&lt;span color=&quot;darkblue&quot;&gt;${Player_ScenarioDirectory}/&lt;/span&gt;).&lt;/i&gt;&lt;/small&gt;</Text>
+			<Text>&lt;big&gt;&lt;b&gt;Training Phase&lt;/b&gt;&lt;/big&gt;
+</Text>
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x473d9a43, 0x97fc0a97)</Identifier>
-					<Value>688</Value>
+					<Value>592.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x7234b86b, 0x2b8651a5)</Identifier>
-					<Value>-336</Value>
+					<Value>-128.000000</Value>
 				</Attribute>
 			</Attributes>
 		</Comment>
@@ -1851,25 +1869,11 @@ folder where the scenario xml is located
 			<Attributes>
 				<Attribute>
 					<Identifier>(0x473d9a43, 0x97fc0a97)</Identifier>
-					<Value>592</Value>
+					<Value>592.000000</Value>
 				</Attribute>
 				<Attribute>
 					<Identifier>(0x7234b86b, 0x2b8651a5)</Identifier>
-					<Value>16</Value>
-				</Attribute>
-			</Attributes>
-		</Comment>
-		<Comment>
-			<Identifier>(0x68162d52, 0x34c673a0)</Identifier>
-			<Text>You can browse each box' documentation by selecting the box and pressing &lt;b&gt;F1&lt;/b&gt;</Text>
-			<Attributes>
-				<Attribute>
-					<Identifier>(0x473d9a43, 0x97fc0a97)</Identifier>
-					<Value>688</Value>
-				</Attribute>
-				<Attribute>
-					<Identifier>(0x7234b86b, 0x2b8651a5)</Identifier>
-					<Value>-480</Value>
+					<Value>64.000000</Value>
 				</Attribute>
 			</Attributes>
 		</Comment>
@@ -1912,4 +1916,30 @@ folder where the scenario xml is located
 			<NumChildren>0</NumChildren>
 		</VisualisationWidget>
 	</VisualisationTree>
+	<Attributes>
+		<Attribute>
+			<Identifier>(0x790d75b8, 0x3bb90c33)</Identifier>
+			<Value></Value>
+		</Attribute>
+		<Attribute>
+			<Identifier>(0x8c1fc55b, 0x7b433dc2)</Identifier>
+			<Value></Value>
+		</Attribute>
+		<Attribute>
+			<Identifier>(0x9f5c4075, 0x4a0d3666)</Identifier>
+			<Value></Value>
+		</Attribute>
+		<Attribute>
+			<Identifier>(0xf36a1567, 0xd13c53da)</Identifier>
+			<Value></Value>
+		</Attribute>
+		<Attribute>
+			<Identifier>(0xf6b2e3fa, 0x7bd43926)</Identifier>
+			<Value></Value>
+		</Attribute>
+		<Attribute>
+			<Identifier>(0xf8034a49, 0x8b3f37cc)</Identifier>
+			<Value></Value>
+		</Attribute>
+	</Attributes>
 </OpenViBE-Scenario>
