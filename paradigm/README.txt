@@ -1,5 +1,4 @@
-## **SSVEP Paradigm**
-To run the paradigm:
+To run the  SSVEP paradigm:
 1. Copy and paste your openvibe folder from Programs(x86) to your Desktop
 2. Go to Desktop\openvibe\share\openvibe\applications\ssvep-demo and replece the trainer file with the one of this folder
 3. Move the xlm files on the ssvep folder on your Desktop
