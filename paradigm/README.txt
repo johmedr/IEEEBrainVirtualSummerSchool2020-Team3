@@ -11,7 +11,7 @@ To run the  SSVEP paradigm:
 
 To open the GDF-files:
 1. Unzip biosig-master.zip
-2. In the folder “biosig-master”, put the other scripts and functions 
+2. In the folder “biosig-master”, put the Maltab scripts and functions 
 3. Use the following lines:
         addpath('./biosig/');
         install();
